@@ -1,0 +1,20 @@
+server:
+  port: 8082
+cbr:
+  uri: "https://cbr.ru/scripts/XML_daily.asp"
+
+app:
+  rest:
+    api:
+      prefix: /rates
+
+spring:
+  cache:
+    caffeine:
+      spec: maximumSize=3,expireAfterAccess=24h
+
+logging:
+  level:
+   ru.cloudmicro.currencycbrproject.cbrclient: DEBUG
+  file:
+    name: logs/CurrencyService.log
