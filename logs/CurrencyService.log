@@ -1,0 +1,90 @@
+2024-03-13T02:19:03.176+03:00  INFO 18628 --- [CurrencyCbrProject] [main] r.c.c.CurrencyCbrProjectApplication      : Starting CurrencyCbrProjectApplication using Java 17.0.10 with PID 18628 (D:\Progects\CurrencyCbrProject\target\classes started by kovty in D:\Progects\CurrencyCbrProject)
+2024-03-13T02:19:03.180+03:00  INFO 18628 --- [CurrencyCbrProject] [main] r.c.c.CurrencyCbrProjectApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T02:19:04.391+03:00  INFO 18628 --- [CurrencyCbrProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-03-13T02:19:04.402+03:00  INFO 18628 --- [CurrencyCbrProject] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T02:19:04.403+03:00  INFO 18628 --- [CurrencyCbrProject] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T02:19:04.472+03:00  INFO 18628 --- [CurrencyCbrProject] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T02:19:04.472+03:00  INFO 18628 --- [CurrencyCbrProject] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1232 ms
+2024-03-13T02:19:04.552+03:00  WARN 18628 --- [CurrencyCbrProject] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'rateRestController' defined in file [D:\Progects\CurrencyCbrProject\target\classes\ru\cloudmicro\currencycbrproject\rest\RateRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'rateService' defined in file [D:\Progects\CurrencyCbrProject\target\classes\ru\cloudmicro\currencycbrproject\service\RateService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ratesGettingService' defined in file [D:\Progects\CurrencyCbrProject\target\classes\ru\cloudmicro\currencycbrproject\service\RatesGettingService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ru.cloudmicro.currencycbrproject.cbrclient.CbrClient': Unexpected exception during bean creation
+2024-03-13T02:19:04.555+03:00  INFO 18628 --- [CurrencyCbrProject] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-03-13T02:19:04.568+03:00  INFO 18628 --- [CurrencyCbrProject] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-13T02:19:04.594+03:00 ERROR 18628 --- [CurrencyCbrProject] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in ru.cloudmicro.currencycbrproject.service.RatesGettingService required a bean of type 'org.springframework.cloud.openfeign.FeignContext' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.openfeign.FeignContext' in your configuration.
+
+2024-03-13T02:19:21.228+03:00  INFO 23124 --- [main] r.c.c.CurrencyCbrProjectApplication      : Starting CurrencyCbrProjectApplication using Java 17.0.10 with PID 23124 (D:\Progects\CurrencyCbrProject\target\classes started by kovty in D:\Progects\CurrencyCbrProject)
+2024-03-13T02:19:21.230+03:00  INFO 23124 --- [main] r.c.c.CurrencyCbrProjectApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T02:19:22.490+03:00  INFO 23124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-03-13T02:19:22.501+03:00  INFO 23124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T02:19:22.502+03:00  INFO 23124 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T02:19:22.601+03:00  INFO 23124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T02:19:22.602+03:00  INFO 23124 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1306 ms
+2024-03-13T02:19:22.682+03:00  WARN 23124 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'rateRestController' defined in file [D:\Progects\CurrencyCbrProject\target\classes\ru\cloudmicro\currencycbrproject\rest\RateRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'rateService' defined in file [D:\Progects\CurrencyCbrProject\target\classes\ru\cloudmicro\currencycbrproject\service\RateService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ratesGettingService' defined in file [D:\Progects\CurrencyCbrProject\target\classes\ru\cloudmicro\currencycbrproject\service\RatesGettingService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ru.cloudmicro.currencycbrproject.cbrclient.CbrClient': Unexpected exception during bean creation
+2024-03-13T02:19:22.685+03:00  INFO 23124 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-03-13T02:19:22.700+03:00  INFO 23124 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-13T02:19:22.727+03:00 ERROR 23124 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in ru.cloudmicro.currencycbrproject.service.RatesGettingService required a bean of type 'org.springframework.cloud.openfeign.FeignContext' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.openfeign.FeignContext' in your configuration.
+
+2024-03-13 02:20:52.479  INFO 22288 --- [main] r.c.c.CurrencyCbrProjectApplication      : Starting CurrencyCbrProjectApplication using Java 17.0.10 on T14 with PID 22288 (D:\Progects\CurrencyCbrProject\target\classes started by kovty in D:\Progects\CurrencyCbrProject)
+2024-03-13 02:20:52.482  INFO 22288 --- [main] r.c.c.CurrencyCbrProjectApplication      : No active profile set, falling back to default profiles: default
+2024-03-13 02:20:53.283  INFO 22288 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e06a18fe-cd8b-3abc-bfbd-344f5a29ab2b
+2024-03-13 02:20:53.616  INFO 22288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2024-03-13 02:20:53.627  INFO 22288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13 02:20:53.628  INFO 22288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-03-13 02:20:53.743  INFO 22288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13 02:20:53.744  INFO 22288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1207 ms
+2024-03-13 02:20:54.983  INFO 22288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2024-03-13 02:20:55.131  INFO 22288 --- [main] r.c.c.CurrencyCbrProjectApplication      : Started CurrencyCbrProjectApplication in 3.423 seconds (JVM running for 4.311)
+2024-03-13 02:22:07.740  INFO 4572 --- [main] r.c.c.CurrencyCbrProjectApplication      : Starting CurrencyCbrProjectApplication using Java 17.0.10 on T14 with PID 4572 (D:\Progects\CurrencyCbrProject\target\classes started by kovty in D:\Progects\CurrencyCbrProject)
+2024-03-13 02:22:07.743  INFO 4572 --- [main] r.c.c.CurrencyCbrProjectApplication      : No active profile set, falling back to default profiles: default
+2024-03-13 02:22:08.626  INFO 4572 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e06a18fe-cd8b-3abc-bfbd-344f5a29ab2b
+2024-03-13 02:22:09.025  INFO 4572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2024-03-13 02:22:09.039  INFO 4572 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13 02:22:09.039  INFO 4572 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-03-13 02:22:09.179  INFO 4572 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13 02:22:09.179  INFO 4572 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1377 ms
+2024-03-13 02:22:10.565  INFO 4572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2024-03-13 02:22:10.719  INFO 4572 --- [main] r.c.c.CurrencyCbrProjectApplication      : Started CurrencyCbrProjectApplication in 3.731 seconds (JVM running for 4.529)
+2024-03-13 02:22:19.254  INFO 4572 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13 02:22:19.254  INFO 4572 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13 02:22:19.255  INFO 4572 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-13 02:23:54.472  INFO 3060 --- [main] r.c.c.CurrencyCbrProjectApplication      : Starting CurrencyCbrProjectApplication using Java 17.0.10 on T14 with PID 3060 (D:\Progects\CurrencyCbrProject\target\classes started by kovty in D:\Progects\CurrencyCbrProject)
+2024-03-13 02:23:54.474  INFO 3060 --- [main] r.c.c.CurrencyCbrProjectApplication      : No active profile set, falling back to default profiles: default
+2024-03-13 02:23:55.416  INFO 3060 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e06a18fe-cd8b-3abc-bfbd-344f5a29ab2b
+2024-03-13 02:23:55.806  INFO 3060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2024-03-13 02:23:55.818  INFO 3060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13 02:23:55.819  INFO 3060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-03-13 02:23:55.961  INFO 3060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13 02:23:55.961  INFO 3060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1427 ms
+2024-03-13 02:23:57.392  INFO 3060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2024-03-13 02:23:57.534  INFO 3060 --- [main] r.c.c.CurrencyCbrProjectApplication      : Started CurrencyCbrProjectApplication in 3.86 seconds (JVM running for 4.679)
+2024-03-13 02:27:08.682  INFO 3060 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13 02:27:08.682  INFO 3060 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13 02:27:08.682  INFO 3060 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
